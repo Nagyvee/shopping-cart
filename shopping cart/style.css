@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital@1&family=Ysabeau+Infant&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.logo-img{
+    background-image: url(images/backgrnd.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    top: 0;
+    width: 100%;
+    display: flex;
+    height: 120px;
+    padding: 5px 5%;
+    background-image: url(images/backgrnd.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#header {
+  position: sticky;
+}
+
+.logo{
+    width: 120px;
+    height: 80px;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+
+.navbar{
+margin-top: 30px;
+margin-left: 50%; 
+margin-bottom: 30px;
+display: flex;
+margin-right: 0;
+background-color: white;
+height: fit-content;
+border-radius: 5px;
+}
+
+.navkey{
+    color:rgb(15, 30, 80) ;
+    font-size: 25px;
+    background-color:transparent;
+    margin-right: 1.2em;
+    line-height: 30px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+a:hover{
+    background-color: rgb(200, 184, 144);
+    color: black;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#count{
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 3, 3);
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 12px;
+    padding-left: 2px 5px;
+    }
+
+    .container , .cart-container{
+        width: 90%;
+        text-align: center;
+        justify-content: center;
+        padding-top: 13px;
+    }
+
+    .items{
+width: 100%;
+display: grid;
+display: grid;
+border-radius: 6px;
+grid-template-columns: auto auto auto;
+background-color: #eeeeee;
+padding: 10px;
+    }
+
+.products{
+    display: static;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    padding: 10px 10px 10px 10px;
+    border: solid rgb(205, 205, 205) 1px;
+    border-radius: 12px;
+    opacity: 0.75;
+}
+
+.products img{
+    width: 280px;
+    height: 300px;
+    border-radius: 7px;
+}
+
+.products:hover{
+   opacity: 1;
+}
+
+.name{
+    color: red;
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input{
+    width: 60px;
+    color: red;
+    text-align: center;
+    margin-right: 50px;
+
+}
+
+button{
+    border: none;
+    background-color: green;
+    color: goldenrod;
+    cursor: pointer;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+button:hover{
+    font-size: larger;
+    color: white;
+}
+
+/* Cart HTML styling */
+.cart-wrap{
+ justify-content: space-around;
+ max-width: 850px;
+ margin:0 auto;
+ margin-top: 50px;
+}
+
+.cart-header{
+  width: 100%;
+  display: flex;
+  margin:0 auto;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.number, .item, .each-price, .quantity, .total-price{
+    font-size: 16px;
+    font-weight: bolder;
+    border-bottom: 2px solid gray;
+    justify-content: flex-start;
+}
+
+.number{
+    width: 3%;
+    padding-left: 10px;
+}
+
+.item{
+    width: 35%;
+}
+
+.each-price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid grey;
+}
+
+.quantity{
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+}
+
+.total-price{
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    border-bottom: 4px solid gray;
+}
+
+.cart-products{
+    display: flex;
+}
+
+.item-tittle{
+    display: flex;
+    margin-right: 30px;
+    width: 38%;
+    margin-top: 18px;
+}
+
+.item-tittle img{
+    width: 140px;
+    height: 80px;
+    border-radius: 7px;
+    margin: 0 22px 15px 30px;
+}
+
+.item-tittle i{
+    margin-top: 26px;
+    cursor: pointer;
+}
+
+.cart-price{
+    margin-top: 22px;
+    width: 15%;
+    font-size: medium;
+    text-align: justify;
+}
+
+.cart-qnty{
+    width: 20%;
+    margin-top: 22px;
+    display: flex;
+}
+
+.cart-qnty i{
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 13px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.cart-total{
+    width: 20%;
+    margin-top: 26px;
+    font-size: medium;
+    text-align: justify;
+    position: relative;
+    text-align: center;
+    right: 5%;
+}
+
+.cart-cost{
+    border-top: solid black 1px;
+    margin-bottom: 100px;
+    padding-top: 10px;
+
+}
+
+.totalcost-price{
+   float: right;
+   font-weight: bolder;
+   position: relative;
+   right: 13%;
+   text-align: center;
+   font-size: large;
+   border-bottom: solid black 3px;
+}
+
+.totalcost-text{
+float: left;
+font-size: large;
+font-weight: bold;
+position: relative;
+left: 60%;
+}
+
+.cart-container{
+    width: 100%;
+}
+
+.cart-cost button{
+    height: 2em;
+    width: 5em;
+    margin-top: 3em;
+    float: right;
+}
+
+.cart-cost button:hover{
+    height: 2em;
+    width: 5em;
+    border: 1px solid rgb(0, 61, 0);
+    border-right: none;
+    background-color: rgb(111, 184, 111);
+}
